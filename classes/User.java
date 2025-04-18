@@ -70,4 +70,8 @@ public User(String username, String password) throws InvalidOperationException{
         this.behavior.buyPremium(owner, month);
     }
 
+    public ArrayList<Playlist> getPlaylists() {
+        return playlists;
+    }
+
 }

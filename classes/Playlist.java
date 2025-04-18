@@ -70,12 +70,19 @@ public class Playlist extends User {
             for (Music music : playlist) {
                 music.play();
                 System.out.println("Now playing: " + music.getTitle());
-                System.out.println("Enter 'next' to stop.");
+                System.out.println("Enter 'next' to skip to the next song, or '-1' to stop.");
                 String input = scn.nextLine();
-                if (input.equalsIgnoreCase("next")) {
+
+                if (input.equalsIgnoreCase("-1")) {
+                    System.out.println("Stopping playlist.");
                     break;
+                } else if (!input.equalsIgnoreCase("next")) {
+                    throw new InvalidOperationException("Invalid input");
                 }
             }
         }
+    }
+    public ArrayList<Music> getPlaylist() {
+        return playlist;
     }
 }
