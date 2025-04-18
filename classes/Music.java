@@ -14,6 +14,10 @@ public class Music {
         allMusics.add(this);
     }
 
+    public String getTitle() {
+        return title;
+    }
+
     public void play(){
         System.out.println("Muisc '" + title + "' by " + singer.getUsername() + "is playing");
     }

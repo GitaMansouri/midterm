@@ -3,8 +3,8 @@ import java.util.*;
 
 public class User {
 
-private String username;
-private String password;
+protected static String username;
+protected static String password;
 private ArrayList<User> followerList;
 private ArrayList<User> followingList;
 public UserBehavior behavior;
@@ -29,9 +29,16 @@ public User(String username, String password) throws InvalidOperationException{
     allUsers.add(this);
 }
 
+    public User() {
+    }
+
     public String getUsername() {
         return username;
     }
+    public static String getPassword() {
+        return password;
+    }
+
     private boolean isValidPassword(String password) {
         return password != null && password.length() >= 8;
     }
