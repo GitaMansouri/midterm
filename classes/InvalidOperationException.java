@@ -1,4 +1,6 @@
 package classes;
 
-public class InvalidOperationException {
+public class InvalidOperationException extends Exception {
+
+
 }

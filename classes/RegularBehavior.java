@@ -1,4 +1,4 @@
 package classes;
 
-public class RegularBehavior {
+public class RegularBehavior implements UserBehavior {
 }

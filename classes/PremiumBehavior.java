@@ -1,4 +1,4 @@
 package classes;
 
-public class PremiumBehavior {
+public class PremiumBehavior implements UserBehavior {
 }
