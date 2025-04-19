@@ -45,4 +45,16 @@ public class Music {
         }
         return null;
     }
+
+    public static ArrayList<Music> getAllMusics() {
+        return allMusics;
+    }
+
+    public int getNumberOfStream() {
+        return numberOfStream;
+    }
+
+    public User getSinger() {
+        return singer;
+    }
 }

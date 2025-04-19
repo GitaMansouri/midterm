@@ -25,5 +25,13 @@ package classes;
             this.month += month;
 
         }
+
+        public User getOwner() {
+            return owner;
+        }
+
+        public int getMonth() {
+            return month;
+        }
     }
 

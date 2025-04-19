@@ -85,4 +85,34 @@ public class Playlist extends User {
     public ArrayList<Music> getPlaylist() {
         return playlist;
     }
+
+    @Override
+    public ArrayList<User> getFollowerList() {
+        return super.getFollowerList();
+    }
+
+    @Override
+    public ArrayList<User> getFollowingList() {
+        return super.getFollowingList();
+    }
+
+    @Override
+    public UserBehavior getBehavior() {
+        return super.getBehavior();
+    }
+
+    @Override
+    public ArrayList<Playlist> getPlaylists() {
+        return super.getPlaylists();
+    }
+
+    @Override
+    public String getUsername() {
+        return super.getUsername();
+    }
+
+    public User getOwner() {
+        return owner;
+    }
+
 }

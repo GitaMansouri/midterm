@@ -19,10 +19,10 @@ public class RegularBehavior implements UserBehavior {
     }
     @Override
     public void buyPremium(User owner, int month) {
-        if (owner != null) {
             owner.behavior = new PremiumBehavior(owner, month);
-        } else {
-            System.out.println("Invalid owner.");
-        }
+    }
+
+    public int getPlayingLimit() {
+        return playingLimit;
     }
 }

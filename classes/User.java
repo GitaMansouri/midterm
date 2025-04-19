@@ -74,4 +74,20 @@ public User(String username, String password) throws InvalidOperationException{
         return playlists;
     }
 
+    public ArrayList<User> getFollowerList() {
+        return followerList;
+    }
+
+    public ArrayList<User> getFollowingList() {
+        return followingList;
+    }
+
+    public static ArrayList<User> getAllUsers() {
+        return allUsers;
+    }
+
+    public UserBehavior getBehavior() {
+        return behavior;
+    }
+
 }
