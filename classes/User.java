@@ -61,7 +61,7 @@ public User(String username, String password) throws InvalidOperationException{
         }
     }
     public void createPlaylist(String title, User owner){
-            this.behavior.createPlaylist(title, owner);
+    this.behavior.createPlaylist(title,this);
     }
     public void playMusic(Music music) {
         this.behavior.playMusic(music);
